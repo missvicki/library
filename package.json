@@ -1,0 +1,44 @@
+{
+  "name": "library",
+  "version": "1.0.0",
+  "description": "library app with books",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "DEBUG=app nodemon app.js",
+    "lint": "eslint app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "4.3.1",
+    "chalk": "2.4.2",
+    "debug": "4.1.1",
+    "eslint-config-prettier": "6.0.0",
+    "express": "4.17.1",
+    "jquery": "3.4.1",
+    "morgan": "1.9.1",
+    "nodemon": "1.19.1",
+    "path": "0.12.7",
+    "pug": "2.0.4"
+  },
+  "devDependencies": {
+    "eslint": "5.16.0",
+    "eslint-config-airbnb": "17.1.1",
+    "eslint-config-airbnb-base": "13.2.0",
+    "eslint-plugin-import": "2.18.1",
+    "eslint-plugin-jsx-a11y": "6.2.3",
+    "eslint-plugin-react": "7.14.2"
+  },
+  "nodemonConfig": {
+    "restartable": "rs",
+    "ignore": [
+      "node_modules/**/node_modules"
+    ],
+    "delay": "2500",
+    "env": {
+      "NODE_ENV": "development",
+      "PORT": 4000
+    }
+  }
+}
